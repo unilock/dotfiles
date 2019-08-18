@@ -3,6 +3,8 @@ add Sublime Text preferences
 check for Xcode + Command Line Tools before installing
 add Liony McLionface for Lion installer; uninstall when finished
 	build LM -> use "~/lm/curl", etc. to install macports and co. -> "rm -rf ~/lm"
+enable verbose boot for ultimate hacker points
+    sudo nvram boot-args="-v"
 
 -----
 
