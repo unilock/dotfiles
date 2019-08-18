@@ -13,7 +13,7 @@ macos_build=$(sw_vers -buildVersion)
 # TODO: Make this not horrible.
 
  # Tiger. Probably won't work, as I think $OSTYPE returns decimal point version. Needs further testing.
-if [ $darwin_vers == 8 ]; then
+if (( $darwin_vers == 8 )); then
 	if [ "$macos_build" == "8S165" ] || [ "$macos_build" == "8S2167" ]; then
 		print_line "Mac OS X Tiger ($macos_build) detected. (Why are you still running Tiger...?)"
 		# ./[appropriate script here].sh
@@ -24,7 +24,7 @@ if [ $darwin_vers == 8 ]; then
 	fi
 
  # Leopard. Probably won't work, as I think $OSTYPE returns decimal point version. Needs further testing.
-elif [ $darwin_vers == 9 ]; then
+elif (( $darwin_vers == 9 )); then
 	if [ "$macos_build" != "9L30" ]; then
 		print_line "Max OS X Leopard (9L30) detected."
 		# ./[appropriate script here].sh
@@ -35,7 +35,7 @@ elif [ $darwin_vers == 9 ]; then
 	fi
 
 # Lion.
-elif [ $darwin_vers == 11 ]; then
+elif (( $darwin_vers == 11 )); then
 	if [ "$macos_build" == "11G63" ]; then
 		print_line "Mac OS X Lion (11G63) detected."
 		# ./[appropriate script here].sh
@@ -48,7 +48,7 @@ elif [ $darwin_vers == 11 ]; then
 # TODO: add something for Mountain Lion?
 
 # Yosemite or above.
-elif [ $darwin_vers >= 14 ]; then
+elif (( $darwin_vers >= 14 )); then
 	print_line "$macos_prefix $macos_version ($macos_build) detected."
 	# ./[appropriate script here].sh
 	exit 0
