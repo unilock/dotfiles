@@ -1,10 +1,10 @@
 # This is Git's per-user configuration file.
 [user]
-    name = Sarah Purohit
-    email = winocm@chariot-requiem
+    name = unilock
+    email = unilock@example.com
 
 [core]
-    editor = subl -n -w
+    editor = subl
 
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

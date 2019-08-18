@@ -1,0 +1,17 @@
+TODO:
+add Sublime Text preferences
+check for Xcode + Command Line Tools before installing
+add Liony McLionface for Lion installer; uninstall when finished
+	build LM -> use "~/lm/curl", etc. to install macports and co. -> "rm -rf ~/lm"
+
+-----
+
+disable guest user on login screen (theoretically):
+	sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
+	sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
+(probably not)
+
+disable dock resizing:
+	defaults write com.apple.Dock size-immutable -bool yes; killall Dock
+
++ lots of stuff from winocm's dotfiles (disable autocorrect, .DS_Store go away, etc.)
