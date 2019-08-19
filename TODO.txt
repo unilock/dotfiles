@@ -2,6 +2,7 @@ TODO:
 add Sublime Text preferences
 check for Xcode + Command Line Tools before installing
 implement Mountain Lion installation script (probably same as Lion, excluding LibreOffice)
+	why 10.8 instead of 10.7? -> 10.8 is still supported by LibreOffice (it's 64-bit... sort of)
 add Liony McLionface for Lion installer; uninstall when finished
 	build LM -> use "~/lm/curl", etc. to install macports and co. -> "rm -rf ~/lm"
 	check if LM can work on Mountain Lion
