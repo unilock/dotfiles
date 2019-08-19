@@ -1,8 +1,10 @@
 TODO:
 add Sublime Text preferences
 check for Xcode + Command Line Tools before installing
+implement Mountain Lion installation script (probably same as Lion, excluding LibreOffice)
 add Liony McLionface for Lion installer; uninstall when finished
 	build LM -> use "~/lm/curl", etc. to install macports and co. -> "rm -rf ~/lm"
+	check if LM can work on Mountain Lion
 enable verbose boot for ultimate hacker points
     sudo nvram boot-args="-v"
 
