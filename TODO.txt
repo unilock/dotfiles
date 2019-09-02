@@ -16,6 +16,7 @@ implement Mountain Lion installation script (probably same as Lion, excluding Li
 add Liony McLionface for Lion installer; uninstall when finished
 	build LM -> use "~/lm/curl", etc. to install macports and co. -> "rm -rf ~/lm"
 	check if LM can work on Mountain Lion
+... OR just use MacPorts to install updated OpenSSL / curl / whatever, bypassing LM entirely (can this be done headlessly?)
 enable verbose boot for ultimate hacker points
     sudo nvram boot-args="-v"
 
