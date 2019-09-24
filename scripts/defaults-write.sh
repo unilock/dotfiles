@@ -55,7 +55,7 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # defaults write com.apple.dock tilesize -int 34
 
 print_line " - Disable dock resizing"
-defaults write com.apple.Dock size-immutable -bool yes
+defaults write com.apple.Dock size-immutable -bool true
 
 # print_line " - Hot corner settings"
 # # Top left screen corner
