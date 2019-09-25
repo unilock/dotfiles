@@ -18,7 +18,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     if [ "$darwin_vers" == "8.0" ]; then
         if [ "$macos_build" == "8S165" ] || [ "$macos_build" == "8S2167" ]; then
             print_line "Mac OS X Tiger ($macos_build) detected. (Why are you still running Tiger...?)"
-            # ./[appropriate script here].sh
+            # ./installers/install-4.sh
             exit 0
         else
             print_line "Mac OS X Tiger detected, but you are not running the latest build!"
@@ -29,7 +29,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     elif [ "$darwin_vers" == "9.0" ]; then
         if [ "$macos_build" == "9L30" ]; then
             print_line "Max OS X Leopard (9L30) detected."
-            # ./[appropriate script here].sh
+            # ./installers/install-5.sh
             exit 0
         else
             print_line "Mac OS X Leopard detected, but you are not running the latest build!"
@@ -40,7 +40,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     elif (( $darwin_vers == 11 )); then
         if [ "$macos_build" == "11G63" ]; then
             print_line "Mac OS X Lion (11G63) detected."
-            # ./[appropriate script here].sh
+            # ./installers/install-7.sh
             exit 0
         else
             print_line "Mac OS X Lion detected, but you are not running the latest build!"
@@ -52,7 +52,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # Yosemite or above.
     elif (( $darwin_vers >= 14 )); then
         print_line "$macos_prefix $macos_version ($macos_build) detected."
-        # ./[appropriate script here].sh
+        ./installers/install-10.sh
         exit 0
 
     else
