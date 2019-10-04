@@ -20,6 +20,13 @@ add Liony McLionface for Lion installer; uninstall when finished
 enable verbose boot for ultimate hacker points
     sudo nvram boot-args="-v"
 
+copy-pasted from Google Keep:
+- make scrolling not bad (disable flipflop wheel)
+- allow double tap on touchpad --> drag (in Accessibility)
+- disable "dim backlight slightly when running on battery power"
+- detect if machine is either a laptop or a desktop?
+- "sudo spctl --master-disable" to disable Gatekeeper (be rid of "app cannot be opened b/c it's from an unknown developer")
+
 -----
 
 disable guest user on login screen (theoretically):
