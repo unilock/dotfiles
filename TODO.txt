@@ -19,7 +19,7 @@ add Liony McLionface for Lion installer; uninstall when finished
 ... OR just use MacPorts to install updated OpenSSL / curl / whatever, bypassing LM entirely (can this be done headlessly?)
 enable verbose boot for ultimate hacker points
     sudo nvram boot-args="-v"
-
+        needs to be [sudo nvram boot-args="-v -no_compat_check"] for patched devices (e.g. MacBook6,1 on Catalina)
 copy-pasted from Google Keep:
 - make scrolling not bad (disable flipflop wheel)
 - allow double tap on touchpad --> drag (in Accessibility)
