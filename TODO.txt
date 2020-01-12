@@ -42,3 +42,28 @@ disable dock resizing:
     defaults write com.apple.Dock size-immutable -bool yes; killall Dock
 
 + lots of stuff from winocm's dotfiles (disable autocorrect, .DS_Store go away, etc.)
+
+
+
+~~~
+
+
+
+- disable recent apps in dock ‘defaults write com.apple.dock show-recents -bool FALSE’
+- automatically apply dock + finder layout settings (e.g. sidebar options)
+    - can probably be done using plists
+- automatically apply Terminal.app settings with plists
+- desktop: snap to grid (again, plists)
+- disk utility prefs (PLISTS), e.g. "show all devices", menu bar items
+- show volume, bluetooth in status bar
+    - organize as asppropriate (PLISTSSSSSSS)
+    - "display the time with seconds", "show date"
+    - need to check if bluetooth is even available on system
+- disable flipflopwheel (both mouse and touchbar)
+- disable "add period with double-space"
+- set temperature to °C
+- disable Power Nap
+- disable "reopen windows when logging in" PERMANENTLY
+- set defaults for finder view preferences (e.g. "sort by kind")
+
+"reset userspace" kills everything on Catalina
