@@ -1,68 +1,37 @@
 #!/bin/bash
-
 source functions/common
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
+print_line "Setting up the environment."
 
-    darwin_vers=${OSTYPE:6}
+# Copy dotfiles to home
+./scripts/install-dotfiles.sh
 
-    macos_prefix=$(sw_vers -productName)
-    macos_version=$(sw_vers -productVersion)
-    macos_build=$(sw_vers -buildVersion)
+# Set the default shell to bash
+./scripts/set-shell-to-bash.sh
 
+# Disable Gatekeeper
+./scripts/disable-gatekeeper.sh
 
-    # Check macOS version.
-    # TODO: Make this not horrible.
+# Install homebrew
+./scripts/install-homebrew.sh
 
-     # Tiger.
-    if [ "$darwin_vers" == "8.0" ]; then
-        if [ "$macos_build" == "8S165" ] || [ "$macos_build" == "8S2167" ]; then
-            print_line "Mac OS X Tiger ($macos_build) detected. (Why are you still running Tiger...?)"
-            # ./installers/install-4.sh
-            exit 0
-        else
-            print_line "Mac OS X Tiger detected, but you are not running the latest build!"
-            exit 1
-        fi
+# # Install homebrew packages
+# ./scripts/install-homebrew-packages.sh
 
-     # Leopard.
-    elif [ "$darwin_vers" == "9.0" ]; then
-        if [ "$macos_build" == "9L30" ]; then
-            print_line "Max OS X Leopard (9L30) detected."
-            # ./installers/install-5.sh
-            exit 0
-        else
-            print_line "Mac OS X Leopard detected, but you are not running the latest build!"
-            exit 1
-        fi
+# Set sane defaults
+./scripts/defaults-write.sh
 
-    # Lion.
-    elif (( $darwin_vers == 11 )); then
-        if [ "$macos_build" == "11G63" ]; then
-            print_line "Mac OS X Lion (11G63) detected."
-            # ./installers/install-7.sh
-            exit 0
-        else
-            print_line "Mac OS X Lion detected, but you are not running the latest build!"
-            exit 1
-        fi
+# # Remap keyboard settings
+# ./scripts/remap-keyboard.sh
 
-    # TODO: Mountain Lion support.
+# # Set up applications
+# ./scripts/defaults-app-write.sh
 
-    # Yosemite or above.
-    elif (( $darwin_vers >= 14 )); then
-        print_line "$macos_prefix $macos_version ($macos_build) detected."
-        ./installers/install-10.sh
-        exit 0
+# # Create and install the Root FS overlay root
+# ./scripts/install-rootfs-overlay.sh
 
-    else
-        print_line "Unsupported version of $macos_prefix!"
-        exit 1
-    fi
+# # Start services
+# ./scripts/start-services.sh
 
-else
-    print_line "This is not a Darwin system!"
-    exit 1
-fi
-
-# TODO: Implement checks for other operating systems.
+# Restart userspace
+./scripts/restart-userspace.sh

@@ -1,69 +1,18 @@
 TODO:
-- 10.5 and below: tigerbrew; 10.7/10.8: macports; 10.10 and above: homebrew
-- automate various program installations
-    - without brew (cask) on <10.10 (how?)
-    - check how tigerbrew can install things (does it support brew cask?)
-    - 10.7: Firefox Legacy, Sublime Text, LibreOffice (probably the same on 10.8, except LibreOffice needs to be updated)
-- automate macports programs? + brew (cask) programs on applicable platforms
-- automatically create ~/Projects dir + create link on sidebar ("Favorites")
+
 - specify what is and is not shown in Finder
     - i.e. sidebar + desktop
     - maybe dock?
-- automate Sublime Text preferences
--  check for Xcode + Command Line Tools before installing
--  implement Mountain Lion installation script (probably same as Lion, excluding LibreOffice)
-    - why 10.8 instead of 10.7? -> 10.8 is still supported by LibreOffice (it's 64-bit... sort of)
-- add Liony McLionface for Lion installer; uninstall when finished
-    - build LM -> use "~/lm/curl", etc. to install macports and co. -> "rm -rf ~/lm"
-    - check if LM can work on Mountain Lion
-    - ... OR just use MacPorts to install updated OpenSSL / curl / whatever, bypassing LM entirely (can this be done headlessly?)
-- enable verbose boot for ultimate hacker points
-    - sudo nvram boot-args="-v"
-        - needs to be [sudo nvram boot-args="-v -no_compat_check"] for patched devices (e.g. MacBook6,1 on Catalina)
-- make scrolling not bad (disable flipflop wheel)
-- allow double tap on touchpad --> drag (in Accessibility)
-- disable "dim backlight slightly when running on battery power"
-- detect if machine is either a laptop or a desktop?
-- "sudo spctl --master-disable" to disable Gatekeeper (be rid of "app cannot be opened b/c it's from an unknown developer")
-- status bar
-    - show full date
-    - show time with seconds
-    - show login switcher (short name)
-
------
-
-disable guest user on login screen (theoretically):
-    sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
-    sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
-(probably not)
-(not that it matters; this isn't a problem anymore)
-
-disable dock resizing:
-    defaults write com.apple.Dock size-immutable -bool yes; killall Dock
-
-+ lots of stuff from winocm's dotfiles (disable autocorrect, .DS_Store go away, etc.)
-
-
-
-~~~
-
-
-
-- disable recent apps in dock ‘defaults write com.apple.dock show-recents -bool FALSE’
 - automatically apply dock + finder layout settings (e.g. sidebar options)
     - can probably be done using plists
 - automatically apply Terminal.app settings with plists
 - desktop: snap to grid (again, plists)
 - disk utility prefs (PLISTS), e.g. "show all devices", menu bar items
-- show volume, bluetooth in status bar
-    - organize as asppropriate (PLISTSSSSSSS)
-    - "display the time with seconds", "show date"
-    - need to check if bluetooth is even available on system
-- disable flipflopwheel (both mouse and touchbar)
-- disable "add period with double-space"
-- set temperature to °C
-- disable Power Nap
-- disable "reopen windows when logging in" PERMANENTLY
+- menubar
+    - organize as appropriate (PLISTSSSSSSS)
 - set defaults for finder view preferences (e.g. "sort by kind")
+- automate Sublime Text preferences (plists)
+
+- disable Power Nap
 
 "reset userspace" kills everything on Catalina

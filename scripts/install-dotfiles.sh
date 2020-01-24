@@ -1,6 +1,10 @@
 #!/bin/sh
 source functions/common
 
+print_line "Creating Projects directory..."
+
+mkdir ~/Projects
+
 print_line "Copying default settings files..."
 
 # Copy my gitconfigs...
