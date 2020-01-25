@@ -6,8 +6,8 @@ print_line "Setting up the environment."
 # Copy dotfiles to home
 ./scripts/install-dotfiles.sh
 
-# Set the default shell to bash
-./scripts/set-shell-to-bash.sh
+# Set the default shell to zsh
+./scripts/set-shell-to-zsh.sh
 
 # Disable Gatekeeper
 ./scripts/disable-gatekeeper.sh
@@ -27,8 +27,8 @@ print_line "Setting up the environment."
 # # Set up applications
 # ./scripts/defaults-app-write.sh
 
-# # Create and install the Root FS overlay root
-# ./scripts/install-rootfs-overlay.sh
+# Create and install the Root FS overlay root
+./scripts/install-rootfs-overlay.sh
 
 # # Start services
 # ./scripts/start-services.sh

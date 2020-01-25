@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export PROMPT='[%m:%1~] %n%# '
+export PATH="/usr/local/sbin:$PATH"
+
+autoload zmv
+
+alias la='ls -a'

@@ -12,6 +12,5 @@ ditto -v dotfiles/gitconfig ~/.gitconfig
 ditto -v .gitignore ~/.gitignore
 # ditto -v dotfiles/clang-format ~/.clang-format
 
-# Copy over bash settings
-ditto -v dotfiles/bashrc ~/.bashrc
-ditto -v dotfiles/bash_profile ~/.bash_profile
+# Copy over zsh settings
+ditto -v dotfiles/zshrc ~/.zshrc
