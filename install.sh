@@ -15,8 +15,8 @@ print_line "Setting up the environment."
 # Install homebrew
 ./scripts/install-homebrew.sh
 
-# # Install homebrew packages
-# ./scripts/install-homebrew-packages.sh
+# Install homebrew packages
+./scripts/install-homebrew-packages.sh
 
 # Set sane defaults
 ./scripts/defaults-write.sh

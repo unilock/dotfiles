@@ -4,6 +4,9 @@ source functions/common
 # Install long list of packages.
 IFS=$'\n'
 
+print_line "Adding Homebrew taps."
+cat lists/brew-taps | xargs brew tap
+
 print_line "Installing Homebrew packages."
 cat lists/brew-packages | xargs brew install
 

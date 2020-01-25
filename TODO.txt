@@ -8,8 +8,6 @@ TODO:
 - automatically apply Terminal.app settings with plists
 - desktop: snap to grid (again, plists)
 - disk utility prefs (PLISTS), e.g. "show all devices", menu bar items
-- menubar
-    - organize as appropriate (PLISTSSSSSSS)
 - set defaults for finder view preferences (e.g. "sort by kind")
 - automate Sublime Text preferences (plists)
 
