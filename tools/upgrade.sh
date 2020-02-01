@@ -13,7 +13,7 @@ echo "[INFO] Running 'brew cleanup'"
 brew cleanup
 
 echo "[INFO] Checking for software updates"
-swupd_err=$(softwareupdate -l 2>&1 1>/dev/null)
+swupd_err=$(softwareupdate -l 2>&1)
 if [[ "$swupd_err" == *"No new software available."* ]]; then
     echo "[INFO] No new software updates available."
 elif [[ "$swupd_err" == *"Software Update found the following new or updated software:"* ]]; then
