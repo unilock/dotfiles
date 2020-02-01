@@ -3,6 +3,8 @@
 export PROMPT='[%m:%1~] %n%# '
 export PATH="/usr/local/sbin:$PATH"
 
+unsetopt nomatch
+
 autoload zmv
 
 alias la='ls -a'
