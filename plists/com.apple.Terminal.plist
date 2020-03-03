@@ -10,24 +10,20 @@
 	<true/>
 	<key>Man Page Window Settings</key>
 	<string>Man Page</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{799, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{841, 448}</string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>768 33 445 93 0 0 1280 777 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>364 307 841 470 0 0 1280 777 </string>
+	<string>219 132 841 470 0 0 1280 777 </string>
 	<key>NSWindow Frame TTAppPreferences</key>
-	<string>307 125 667 533 0 0 1280 777 </string>
+	<string>306 125 667 533 0 0 1280 777 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>242 119 810 555 0 0 1280 777 </string>
+	<string>676 254 490 365 0 0 1280 777 </string>
 	<key>NSWindow Frame TTWindow Basic</key>
-	<string>61 208 810 508 0 0 1280 777 </string>
+	<string>670 140 570 365 0 0 1280 777 </string>
 	<key>NSWindow Frame TTWindow Pro</key>
-	<string>84 177 810 555 0 0 1280 777 </string>
+	<string>181 385 490 365 0 0 1280 777 </string>
 	<key>ProfileCurrentVersion</key>
-	<real>2.0600000000000001</real>
+	<real>2.0699999999999998</real>
 	<key>SecureKeyboardEntry</key>
 	<false/>
 	<key>Startup Window Settings</key>
@@ -43,7 +39,7 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAMAAAAAAAABAQgAKAA15TRk1vbm8t
+			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA15TRk1vbm8t
 			UmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250
 			ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zD
 			xgAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADP
@@ -53,7 +49,7 @@
 			<key>FontWidthSpacing</key>
 			<real>1.004032258064516</real>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>name</key>
 			<string>Basic</string>
 			<key>type</key>
@@ -96,7 +92,7 @@
 			<key>FontAntialias</key>
 			<true/>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>SelectionColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -171,7 +167,7 @@
 			<key>FontAntialias</key>
 			<false/>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>SelectionColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -234,7 +230,7 @@
 			<key>FontWidthSpacing</key>
 			<real>1.004032258064516</real>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>SelectionColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -312,7 +308,7 @@
 			<key>FontAntialias</key>
 			<true/>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>SelectionColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -378,7 +374,7 @@
 			<key>FontWidthSpacing</key>
 			<real>0.99596774193548387</real>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>SelectionColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -445,7 +441,7 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAMQAAAAAAABAQgAKAA1ZNb25hY2/S
+			Z3NWTlNOYW1lViRjbGFzcyNAJAAAAAAAABAQgAKAA1ZNb25hY2/S
 			FxgZGlokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRm9udKIZG1hOU09i
 			amVjdAgRGiQpMjdJTFFTWF5nbnd+hY6QkpSboKu0u74AAAAAAAAB
 			AQAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAxw==
@@ -455,7 +451,7 @@
 			<key>FontWidthSpacing</key>
 			<real>0.99596774193548387</real>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>SelectionColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -488,12 +484,10 @@
 			N0lMUVNXXWRseYCMjpCVoKmxtAAAAAAAAAEBAAAAAAAAABkAAAAA
 			AAAAAAAAAAAAAAC9
 			</data>
-			<key>UseBrightBold</key>
-			<true/>
 			<key>name</key>
 			<string>Pro</string>
 			<key>shellExitAction</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>type</key>
 			<string>Window Settings</string>
 		</dict>
@@ -537,7 +531,7 @@
 			<key>FontWidthSpacing</key>
 			<real>1.004032258064516</real>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>SelectionColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -623,7 +617,7 @@
 			<key>FontWidthSpacing</key>
 			<real>1.004032258064516</real>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>SelectionColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -665,6 +659,18 @@
 		</dict>
 		<key>Solid Colors</key>
 		<dict>
+			<key>BackgroundColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGlCwwVGSBVJG51bGzUDQ4PEBESExRXTlNXaGl0ZVxOU0Nv
+			bG9yU3BhY2VfEBJOU0N1c3RvbUNvbG9yU3BhY2VWJGNsYXNzQjEA
+			EAOAAoAE0hYQFxhUTlNJRBACgAPSGhscHVokY2xhc3NuYW1lWCRj
+			bGFzc2VzXE5TQ29sb3JTcGFjZaIeH1xOU0NvbG9yU3BhY2VYTlNP
+			YmplY3TSGhshIldOU0NvbG9yoiEfCBEaJCkyN0lMUVNZX2hwfZKZ
+			nJ6goqesrrC1wMnW2ebv9PwAAAAAAAABAQAAAAAAAAAjAAAAAAAA
+			AAAAAAAAAAAA/w==
+			</data>
 			<key>BackgroundImageBookmark</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
@@ -716,7 +722,7 @@
 			<key>FontWidthSpacing</key>
 			<real>1.004032258064516</real>
 			<key>ProfileCurrentVersion</key>
-			<real>2.0600000000000001</real>
+			<real>2.0699999999999998</real>
 			<key>TextBoldColor</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
