@@ -124,3 +124,6 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 print_line " - Make menubar clock informative"
 defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  h:mm:ss a"
+
+print_line " - Don't automatically sync my MP3 player from 2001"
+defaults write com.apple.AMPDevicesAgent dontAutomaticallySyncIPods -bool true
