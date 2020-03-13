@@ -1,16 +1,5 @@
 TODO:
 
-- specify what is and is not shown in Finder
-    - i.e. sidebar + desktop
-    - maybe dock?
-- automatically apply dock + finder layout settings (e.g. sidebar options)
-    - can probably be done using plists
-- automatically apply Terminal.app settings with plists
-- desktop: snap to grid (again, plists)
-- disk utility prefs (PLISTS), e.g. "show all devices", menu bar items
-- set defaults for finder view preferences (e.g. "sort by kind")
 - automate Sublime Text preferences (plists)
 
 - disable Power Nap
-
-"reset userspace" kills everything on Catalina
