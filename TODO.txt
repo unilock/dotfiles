@@ -1,5 +1,7 @@
 TODO:
 
+- fix `git pull` behavior
+
 - automate Sublime Text preferences (plists)
 
 - disable Power Nap
