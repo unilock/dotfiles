@@ -2,6 +2,8 @@ TODO:
 
 - fix `git pull` behavior
 
+- remove Dock + finder plists (fix them accordingly)
+
 - automate Sublime Text preferences (plists)
 
 - disable Power Nap

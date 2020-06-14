@@ -3,11 +3,20 @@ source functions/common
 
 print_line "Setting default settings."
 
-print_line " - Pink highlight color"
-defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
+# Check if Mojave or above
+if [ ${OSTYPE:6} -ge 18 ]; then
+	print_line " - Pink highlight color"
+	defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
 
-print_line " - Pink accent color"
-defaults write NSGlobalDomain AppleAccentColor -integer 6
+	print_line " - Pink accent color"
+	defaults write NSGlobalDomain AppleAccentColor -integer 6
+else
+	print_line " - Pink highlight color"
+	defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.749020 0.823529"
+fi
+
+print_line " - Dark mode"
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 
 print_line " - Show all extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -48,8 +57,11 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 print_line " - Disable dock resizing"
 defaults write com.apple.Dock size-immutable -bool true
 
-print_line " - Hide recent apps"
-defaults write com.apple.dock show-recents -bool false
+# Check if Mojave or above (again)
+if [ ${OSTYPE:6} -ge 18 ]; then
+	print_line " - Hide recent apps"
+	defaults write com.apple.dock show-recents -bool false
+fi
 
 # print_line " - Hot corner settings"
 # # Top left screen corner
@@ -90,10 +102,7 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 print_line " - Make finder tolerable"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder ShowRecentTags -bool false
-defaults write com.apple.finder SidebarDevicesSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarMediaBrowserSectionDisclosedState -bool true
-defaults write com.apple.finder SidebarPlacesSectionDisclosedState -bool true
-defaults write com.apple.finder SidebarSharedSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarDevicesSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarPlacesSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarSharedSectionDisclosedState -bool true
@@ -125,5 +134,8 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 print_line " - Make menubar clock informative"
 defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  h:mm:ss a"
 
-print_line " - Don't automatically sync my MP3 player from 2001"
-defaults write com.apple.AMPDevicesAgent dontAutomaticallySyncIPods -bool true
+# Check if Catalina or above
+if [ ${OSTYPE:6} -ge 19 ]; then
+	print_line " - Don't automatically sync my MP3 player from 2001"
+	defaults write com.apple.AMPDevicesAgent dontAutomaticallySyncIPods -bool true
+fi

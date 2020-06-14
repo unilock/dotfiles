@@ -15,5 +15,3 @@ set_defaults_for_application() {
 # Do it now.
 set_defaults_for_application com.apple.DiskUtility
 set_defaults_for_application com.apple.Terminal
-set_defaults_for_application com.apple.Dock
-set_defaults_for_application com.apple.finder
