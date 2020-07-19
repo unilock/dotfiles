@@ -8,6 +8,7 @@ TODO:
 
 - disable Power Nap
 
-- add "alias ll='ls -l'" to zshrc
-
 - disable "reopen windows when logging back in"
+
+- fix menubar prefs as such: https://apple.stackexchange.com/questions/306867/can-defaults-write-command-line-configure-the-menu-bar-on-macos/337179
+- enable certain menubar items if we're on a laptop vs. desktop, e.g. check if we're running on MacBook* (possible via ioreg, maybe system_profiler SPHardwareDataType? latter is slower, but easier to use?)
