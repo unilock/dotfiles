@@ -12,3 +12,5 @@ TODO:
 
 - fix menubar prefs as such: https://apple.stackexchange.com/questions/306867/can-defaults-write-command-line-configure-the-menu-bar-on-macos/337179
 - enable certain menubar items if we're on a laptop vs. desktop, e.g. check if we're running on MacBook* (sysctl -n hw.model; use bash trickery to check for "MacBook*")
+
+- remove rootfs installing
