@@ -8,3 +8,4 @@ unsetopt nomatch
 autoload zmv
 
 alias la='ls -a'
+alias ll='ls -l'

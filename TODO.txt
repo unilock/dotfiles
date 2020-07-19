@@ -7,3 +7,7 @@ TODO:
 - automate Sublime Text preferences (plists)
 
 - disable Power Nap
+
+- add "alias ll='ls -l'" to zshrc
+
+- disable "reopen windows when logging back in"
