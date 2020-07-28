@@ -1,15 +1,14 @@
 TODO:
 
-- remove Dock + finder plists (fix them accordingly)
+- remove files in ./temporary (fix them accordingly)
 
 - automate Sublime Text preferences (plists)
 
 - disable "reopen windows when logging back in"
 
-- fix menubar prefs as such: https://apple.stackexchange.com/questions/306867/can-defaults-write-command-line-configure-the-menu-bar-on-macos/337179
-- enable certain menubar items if we're on a laptop vs. desktop, e.g. check if we're running on MacBook* (sysctl -n hw.model; use bash trickery to check for "MacBook*")
-
 - remove rootfs installing
+
+- research this: https://eclecticlight.co/2017/11/09/customising-it-all-global-defaults-in-macos-sierra-and-high-sierra/
 
 
 
@@ -19,13 +18,18 @@ TODO:
 	NO EFFECT?
 [2020/06/09 18:00:36] - Volume in menubar
 	NO EFFECT
-[2020/06/09 18:00:36] Setting up application defaults.
+- fix menubar prefs as such: https://apple.stackexchange.com/questions/306867/can-defaults-write-command-line-configure-the-menu-bar-on-macos/337179
+- enable certain menubar items if we're on a laptop vs. desktop, e.g. check if we're running on MacBook* (sysctl -n hw.model; use bash trickery to check for "MacBook*")
+
+
 [2020/06/09 18:00:37] Setting up defaults for com.apple.Dock from plists/com.apple.Dock.plist.
 	BROKEN! save dock setup as image instead
+- Set dock according to dock.png
+- research macOS dock prefs via `defaults` (i.e. application presence + arrangement) https://hints.macworld.com/article.php?story=20040819170450489
+
+
 [2020/06/09 18:00:37] Setting up defaults for com.apple.finder from plists/com.apple.finder.plist.
 	NO EFFECT ON HIGH SIERRA
-
-TODO:
-- fix crap above
-- consider supporting only mojave and above... or just latest macOS
-- test broken stuff (e.g. dock/finder setup) on latest version of macOS
+- "Snap to Grid" on Desktop
+- Set default folder view options to "Sort by: Name"
+- Create bookmarks according to bookmarks.png
