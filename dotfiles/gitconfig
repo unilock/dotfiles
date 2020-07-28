@@ -6,6 +6,11 @@
 [core]
     editor = subl -n -w
 
+[push]
+
+[pull]
+    rebase = false
+
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     lgx = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Creset' --abbrev-commit
