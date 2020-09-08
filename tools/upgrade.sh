@@ -3,8 +3,8 @@
 echo "[INFO] Running 'brew update'"
 brew update
 
-echo "[INFO] Running 'brew upgrade --fetch-HEAD'"
-brew upgrade --fetch-HEAD
+echo "[INFO] Running 'brew upgrade --formula --fetch-HEAD'"
+brew upgrade --formula --fetch-HEAD
 
 echo "[INFO] Running 'brew upgrade --cask'"
 brew upgrade --cask
