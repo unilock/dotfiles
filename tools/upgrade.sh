@@ -6,8 +6,8 @@ brew update
 echo "[INFO] Running 'brew upgrade --fetch-HEAD'"
 brew upgrade --fetch-HEAD
 
-echo "[INFO] Running 'brew cask upgrade'"
-brew cask upgrade
+echo "[INFO] Running 'brew upgrade --cask'"
+brew upgrade --cask
 
 echo "[INFO] Running 'brew cleanup'"
 brew cleanup
