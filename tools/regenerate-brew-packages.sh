@@ -1,6 +1,9 @@
 #!/bin/sh
 source functions/common
 
+print_line "Regenerating the list of Homebrew taps."
+brew tap > lists/brew-taps
+
 print_line "Regenerating the list of Homebrew packages."
 brew cask list > lists/brew-cask-packages
 
