@@ -5,7 +5,9 @@ source functions/common
 IFS=$'\n'
 
 print_line "Adding Homebrew taps."
-cat lists/brew-taps | xargs brew tap
+cat lists/brew-taps | while read line || [[ -n $line ]]; do
+    brew tap $line
+done
 
 print_line "Installing Homebrew packages."
 cat lists/brew-packages | xargs brew install
