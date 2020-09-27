@@ -1,19 +1,26 @@
 TODO:
 
-- remove files in ./temporary (fix them accordingly)
-
 - automate Sublime Text preferences (plists)
 
+- automatically copy temporary/Wallpapers to ~/Pictures/.
+    - apply to System Preferences / Desktop & Screen Saver
+        - Change picture: Every 30 minutes
+        - Random order
+    - maybe download separately instead of bundling with dotfiles
+        - wget ZIP from somewhere, then extract to ~/Pictures
+
 - disable "reopen windows when logging back in"
+
+- git clone dotfiles to ~/Projects
+    - and continue from there?
+
+- symlink ~/upgrade.sh to ~/Projects/dotfiles/tools/ugrade.sh + chmod +x
+
+- remove files in ./temporary (fix them accordingly)
 
 - remove rootfs installing
 
 - research this: https://eclecticlight.co/2017/11/09/customising-it-all-global-defaults-in-macos-sierra-and-high-sierra/
-
-- automatically copy temporary/Wallpapers to ~/Pictures/.
-	- apply to System Preferences / Desktop & Screen Saver
-		- Change picture: Every 30 minutes
-		- Random order
 
 
 
