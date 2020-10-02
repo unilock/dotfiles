@@ -51,6 +51,9 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Garbage
+# macOS garbage
 .DS_Store
 ._*
+
+# Windows garbage
+Thumbs.db
