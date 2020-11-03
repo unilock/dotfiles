@@ -30,5 +30,7 @@ print_line "Setting up the environment."
 # # Start services
 # ./scripts/start-services.sh
 
-# Restart userspace
-./scripts/restart-userspace.sh
+# # Restart userspace
+#./scripts/restart-userspace.sh
+
+print_line "Done. A reboot is recommended."
