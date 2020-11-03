@@ -8,6 +8,6 @@ wget
 youtube-dl
 
 idevicerestore --HEAD
-libimobiledeivce --HEAD
+libimobiledevice --HEAD
 libirecovery --HEAD
 libusbmuxd --HEAD
