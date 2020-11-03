@@ -12,6 +12,9 @@ done
 print_line "Installing Homebrew packages."
 cat lists/brew-packages | xargs brew install
 
+print_line "Installing Homebrew packages with --HEAD."
+cat lists/brew-head-packages | xargs brew install --HEAD
+
 print_line "Installing Homebrew cask packages."
 cat lists/brew-cask-packages | xargs brew cask install
 
