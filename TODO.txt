@@ -24,6 +24,11 @@ TODO:
 
 - research this: https://eclecticlight.co/2017/11/09/customising-it-all-global-defaults-in-macos-sierra-and-high-sierra/
 
+- automatically copy wallpapers to ~/Pictures/Wallpapers/.
+	- apply to System Preferences / Desktop & Screen Saver
+		- Change picture: Every 30 minutes
+		- Random order
+
 
 
 [2020/06/09 18:00:36] - User switcher in menubar
