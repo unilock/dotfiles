@@ -81,6 +81,9 @@ print_line " - Expand save panels by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
+print_line " - Disable \"Are you sure you want to open this application?\" dialog" 
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
 print_line " - No more resume"
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
@@ -119,14 +122,15 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 print_line " - Hide text input menu"
 defaults write com.apple.TextInputMenu visible -bool false
 
-print_line " - User switcher in menubar"
-defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.appleuser" -bool true
-
-print_line " - Bluetooth in menubar"
-defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.bluetooth" -bool true
-
-print_line " - Volume in menubar"
-defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.volume" -bool true
+# dis be broken
+#print_line " - User switcher in menubar"
+#defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.appleuser" -bool true
+#
+#print_line " - Bluetooth in menubar"
+#defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.bluetooth" -bool true
+#
+#print_line " - Volume in menubar"
+#defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.volume" -bool true
 
 print_line " - Battery percentage in menubar"
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"

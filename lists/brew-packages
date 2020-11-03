@@ -2,7 +2,12 @@ git
 lsusb
 mas
 nano
-nmap
+p7zip
 tree
 wget
 youtube-dl
+
+idevicerestore --HEAD
+libimobiledeivce --HEAD
+libirecovery --HEAD
+libusbmuxd --HEAD

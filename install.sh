@@ -9,9 +9,6 @@ print_line "Setting up the environment."
 # Set the default shell to zsh
 ./scripts/set-shell-to-zsh.sh
 
-# Disable Gatekeeper
-./scripts/disable-gatekeeper.sh
-
 # Install homebrew
 ./scripts/install-homebrew.sh
 
