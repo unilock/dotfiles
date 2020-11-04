@@ -2,6 +2,9 @@ TODO:
 
 - "Always" show scrollbars
 
+- fix rootfs installation
+	- `echo "Welcome to Darwin!" > /private/etc/motd` instead?
+
 - automate Sublime Text preferences (plists)
 
 - automatically copy wallpapers to ~/Pictures/Wallpapers/.
