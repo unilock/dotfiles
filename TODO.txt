@@ -10,8 +10,6 @@ TODO:
         - wget ZIP from somewhere, then extract to ~/Pictures
         - separate GitHub repo?
 
-- disable "reopen windows when logging back in" (it's called "Resume")
-
 - git clone dotfiles to ~/Projects
     - and continue from there?
     - consider this: bootstrap.sh
@@ -22,8 +20,7 @@ TODO:
 
 - research this: https://eclecticlight.co/2017/11/09/customising-it-all-global-defaults-in-macos-sierra-and-high-sierra/
 
-- research this: https://github.com/mathiasbynens/dotfiles/blob/main/.macos
-    - plus other files in this repo
+- research this: https://github.com/mathiasbynens/dotfiles
 
 
 

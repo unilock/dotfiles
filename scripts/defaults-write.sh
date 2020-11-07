@@ -40,7 +40,10 @@ print_line " - Disable dash substitution"
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 print_line " - Enable trackpad tap to click"
-defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 print_line " - Enable trackpad double-tap to drag"
 defaults write com.apple.AppleMultitouchTrackpad DragLock -bool false
@@ -52,6 +55,13 @@ defaults write com.apple.AppleMultitouchMouse MouseVerticalScroll -int 1
 
 print_line " - More sane trackpad scrolling"
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+print_line " - Use scroll gesture with the Ctrl (^) modifier key to zoom"
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+
+print_line " - Disable press-and-hold for keys in favor of key repeat"
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # print_line " - Mission control: group by app"
 # defaults write com.apple.dock expose-group-apps -bool true
@@ -88,11 +98,14 @@ print_line " - Disable \"Are you sure you want to open this application?\" dialo
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 print_line " - No more resume"
-defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 print_line " - Password required after screensaver"
 defaults write com.apple.screensaver askForPassword -bool true
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+print_line " - Disable shadow in screenshots"
+defaults write com.apple.screencapture disable-shadow -bool true
 
 print_line " - Go away Siri"
 defaults write com.apple.assistant.support "Assistant Enabled" -bool false
@@ -146,3 +159,6 @@ if [ ${OSTYPE:6} -ge 19 ]; then
 	print_line " - Don't automatically sync my MP3 player from 2001"
 	defaults write com.apple.AMPDevicesAgent dontAutomaticallySyncIPods -bool true
 fi
+
+print_line " - Let's wipe the dock"
+defaults write com.apple.dock persistent-apps -array
