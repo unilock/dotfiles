@@ -47,7 +47,9 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 print_line " - Enable trackpad double-tap to drag"
 defaults write com.apple.AppleMultitouchTrackpad DragLock -bool false
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad DragLock -bool false
 defaults write com.apple.AppleMultitouchTrackpad Dragging -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool true
 
 print_line " - Enable sane trackpad scrolling"
 defaults write com.apple.AppleMultitouchMouse MouseHorizontalScroll -int 1
