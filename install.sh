@@ -3,6 +3,9 @@ source functions/common
 
 print_line "Setting up the environment."
 
+# Set motd
+./scripts/set-motd.sh
+
 # Copy dotfiles to home
 ./scripts/install-dotfiles.sh
 
@@ -23,9 +26,6 @@ print_line "Setting up the environment."
 
 # Set up applications
 ./scripts/defaults-app-write.sh
-
-# Create and install the Root FS overlay root
-./scripts/install-rootfs-overlay.sh
 
 # # Start services
 # ./scripts/start-services.sh
