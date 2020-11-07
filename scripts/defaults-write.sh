@@ -3,6 +3,9 @@ source functions/common
 
 print_line "Setting default settings."
 
+print_line " - Always show scrollbars"
+defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+
 # Check if Mojave or above
 if [ ${OSTYPE:6} -ge 18 ]; then
 	print_line " - Pink highlight color"

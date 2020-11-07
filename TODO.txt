@@ -1,7 +1,5 @@
 TODO:
 
-- "Always" show scrollbars
-
 - automate Sublime Text preferences (plists)
 
 - automatically copy wallpapers to ~/Pictures/Wallpapers/.
