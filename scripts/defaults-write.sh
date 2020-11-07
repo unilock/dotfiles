@@ -39,10 +39,19 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 print_line " - Disable dash substitution"
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
+print_line " - Enable trackpad silent clicking"
+defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+
+print_line " - Enable trackpad force clicking"
+defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool true
+
+print_line " - Enable trackpad force clicking with haptic feedback"
+defaults write com.apple.AppleMultitouchTrackpad ActuateDetents -int 1
+defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -int 0
+
 print_line " - Enable trackpad tap to click"
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 print_line " - Enable trackpad double-tap to drag"
