@@ -45,7 +45,7 @@ defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 print_line " - Enable trackpad force clicking"
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool true
 
-print_line " - Enable trackpad force clicking with haptic feedback"
+print_line " - Enable trackpad force clicking haptic feedback"
 defaults write com.apple.AppleMultitouchTrackpad ActuateDetents -int 1
 defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -int 0
 
