@@ -9,14 +9,6 @@ brew upgrade --formula --fetch-HEAD
 echo "[INFO] Running 'brew upgrade --cask'"
 brew upgrade --cask
 
-echo "[INFO] Checking if flash-npapi needs to be upgraded"
-if [[ $(brew outdated --cask --greedy) == *"flash-npapi"* ]]; then
-    echo "[INFO] It does! Upgrading..."
-    brew upgrade --cask flash-npapi
-else
-    echo "[INFO] It does not! Skipping..."
-fi
-
 echo "[INFO] Running 'brew cleanup'"
 brew cleanup
 
