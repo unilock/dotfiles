@@ -16,6 +16,10 @@ TODO:
 
 - symlink ~/upgrade.sh to ~/Projects/dotfiles/tools/ugrade.sh + chmod +x
 
+- remove Pink accent + highlight color in favor of Big Sur's rainbow thingie
+
+- rework menu bar items to account for Big Sur
+
 - remove files in ./temporary (fix them accordingly)
 
 - research this: https://eclecticlight.co/2017/11/09/customising-it-all-global-defaults-in-macos-sierra-and-high-sierra/
