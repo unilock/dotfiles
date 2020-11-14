@@ -8,28 +8,16 @@
 	<integer>1</integer>
 	<key>HasMigratedDefaults</key>
 	<true/>
-	<key>Man Page Window Settings</key>
-	<string>Man Page</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{841, 448}</string>
-	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>219 132 841 470 0 0 1280 777 </string>
-	<key>NSWindow Frame TTAppPreferences</key>
-	<string>306 125 667 533 0 0 1280 777 </string>
-	<key>NSWindow Frame TTWindow</key>
-	<string>676 254 490 365 0 0 1280 777 </string>
-	<key>NSWindow Frame TTWindow Basic</key>
-	<string>670 140 570 365 0 0 1280 777 </string>
-	<key>NSWindow Frame TTWindow Pro</key>
-	<string>181 385 490 365 0 0 1280 777 </string>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0699999999999998</real>
 	<key>SecureKeyboardEntry</key>
 	<false/>
+	<key>Shell</key>
+	<string></string>
 	<key>Startup Window Settings</key>
 	<string>Pro</string>
 	<key>TTAppPreferences Selected Tab</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>Window Settings</key>
 	<dict>
 		<key>Basic</key>
@@ -441,7 +429,7 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAJAAAAAAAABAQgAKAA1ZNb25hY2/S
+			Z3NWTlNOYW1lViRjbGFzcyNAKAAAAAAAABAQgAKAA1ZNb25hY2/S
 			FxgZGlokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRm9udKIZG1hOU09i
 			amVjdAgRGiQpMjdJTFFTWF5nbnd+hY6QkpSboKu0u74AAAAAAAAB
 			AQAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAxw==
