@@ -27,6 +27,8 @@ TODO:
 
 - research this: https://github.com/mathiasbynens/dotfiles
 
+- rewrite history to be cleaner and more concise... eventually
+
 
 
 [2020/06/09 18:00:36] - User switcher in menubar
