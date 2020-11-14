@@ -1,9 +1,9 @@
 #!/bin/sh
 source functions/common
 
-print_line "Creating Projects directory..."
-
-mkdir ~/Projects
+print_line "Setting up upgrade script..."
+ln -s tools/upgrade.sh ~/
+chmod +x ~/upgrade.sh
 
 print_line "Copying default settings files..."
 

@@ -6,18 +6,6 @@ print_line "Setting default settings."
 print_line " - Always show scrollbars"
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
-# Check if Mojave or above
-if [ ${OSTYPE:6} -ge 18 ]; then
-	print_line " - Pink highlight color"
-	defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
-
-	print_line " - Pink accent color"
-	defaults write NSGlobalDomain AppleAccentColor -integer 6
-else
-	print_line " - Pink highlight color"
-	defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.749020 0.823529"
-fi
-
 print_line " - Dark mode"
 defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 

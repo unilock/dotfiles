@@ -10,13 +10,14 @@ TODO:
         - wget ZIP from somewhere, then extract to ~/Pictures
         - separate GitHub repo?
 
+- get rid of all the cruft (namely stuff leftover from winocm fork)
+
 - git clone dotfiles to ~/Projects
-    - and continue from there?
-    - consider this: bootstrap.sh
+    - bootstrap.sh accomplishes half of this
+    - can't use git before running dotfiles, can't get dotfiles (with .git) before installing git
+    - setup post-install script to be run before reboot (at least after installing Xcode CLT) that connects local repo to remote
 
-- symlink ~/upgrade.sh to ~/Projects/dotfiles/tools/ugrade.sh + chmod +x
-
-- remove Pink accent + highlight color in favor of Big Sur's rainbow thingie
+- upgrade.sh is symlinked... why not symlink it ALL? (./dotfiles/*, etc)
 
 - rework menu bar items to account for Big Sur
 
@@ -48,4 +49,4 @@ TODO:
     NO EFFECT ON HIGH SIERRA
 - "Snap to Grid" on Desktop
 - Set default folder view options to "Sort by: Kind"
-- Create bookmarks according to bookmarks.png
+- Create bookmarks according to finder0.png
