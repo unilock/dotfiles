@@ -6,8 +6,3 @@ p7zip
 tree
 wget
 youtube-dl
-
-idevicerestore --HEAD
-libimobiledevice --HEAD
-libirecovery --HEAD
-libusbmuxd --HEAD

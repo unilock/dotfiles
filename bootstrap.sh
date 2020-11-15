@@ -1,12 +1,12 @@
 #!/bin/sh
 
+_projects_dir=~/Projects
+_remote_account=unilock
+_remote_repo=dotfiles
+_remote_branch=master
+
 # Grab repository.
 if [ ! -d $_projects_dir/$_remote_repo ]; then
-    _projects_dir=~/Projects
-    _remote_account=unilock
-    _remote_repo=dotfiles
-    _remote_branch=master
-
     echo "Creating projects directory..."
     mkdir -p $_projects_dir/$_remote_repo
 
