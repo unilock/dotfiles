@@ -1,9 +1,8 @@
 adoptopenjdk
 android-platform-tools
 discord
-firefox
+eloston-chromium
 flux
-google-backup-and-sync
 google-chrome
 hex-fiend
 jiggler
@@ -11,6 +10,7 @@ keepassxc
 keka
 libreoffice
 meld
+nextcloud
 paintbrush
 sublime-text
 vlc
