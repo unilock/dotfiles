@@ -2,6 +2,8 @@ TODO:
 
 - automate Sublime Text preferences (plists)
 
+- automate Ungoogled Chromium preferences (Chrome profiles?)
+
 - automatically copy wallpapers to ~/Pictures/Wallpapers/.
     - apply to System Preferences / Desktop & Screen Saver
         - Change picture: Every 30 minutes
