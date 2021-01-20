@@ -1,5 +1,7 @@
 TODO:
 
+- fix battery percentage in menubar in Big Sur
+
 - automate Sublime Text preferences (plists)
 
 - automate Ungoogled Chromium preferences (Chrome profiles?)
@@ -13,6 +15,7 @@ TODO:
         - separate GitHub repo?
 
 - get rid of all the cruft (namely stuff leftover from winocm fork)
+    - organize, organize, organize... (alphabetize defualts-write?)
 
 - git clone dotfiles to ~/Projects
     - bootstrap.sh accomplishes half of this
@@ -26,8 +29,8 @@ TODO:
 - remove files in ./temporary (fix them accordingly)
 
 - research this: https://eclecticlight.co/2017/11/09/customising-it-all-global-defaults-in-macos-sierra-and-high-sierra/
-
 - research this: https://github.com/mathiasbynens/dotfiles
+- research this: https://github.com/joeyhoer/starter
 
 - rewrite history to be cleaner and more concise... eventually
 
@@ -52,5 +55,5 @@ TODO:
 [2020/06/09 18:00:37] Setting up defaults for com.apple.finder from plists/com.apple.finder.plist.
     NO EFFECT ON HIGH SIERRA
 - "Snap to Grid" on Desktop
-- Set default folder view options to "Sort by: Kind"
+- Set default folder view options to "Sort by: Kind" (fixed?)
 - Create bookmarks according to finder0.png

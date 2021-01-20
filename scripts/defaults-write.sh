@@ -6,9 +6,6 @@ print_line "Setting default settings."
 print_line " - Always show scrollbars"
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
-print_line " - Dark mode"
-defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
-
 print_line " - Show all extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
@@ -51,8 +48,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool
 print_line " - Enable sane trackpad scrolling"
 defaults write com.apple.AppleMultitouchMouse MouseHorizontalScroll -int 1
 defaults write com.apple.AppleMultitouchMouse MouseVerticalScroll -int 1
-
-print_line " - More sane trackpad scrolling"
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 print_line " - Use scroll gesture with the Ctrl (^) modifier key to zoom"
@@ -69,11 +64,8 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 print_line " - Disable dock resizing"
 defaults write com.apple.Dock size-immutable -bool true
 
-# Check if Mojave or above (again)
-if [ ${OSTYPE:6} -ge 18 ]; then
-	print_line " - Hide recent apps"
-	defaults write com.apple.dock show-recents -bool false
-fi
+print_line " - Hide recent apps"
+defaults write com.apple.dock show-recents -bool false
 
 # print_line " - Hot corner settings"
 # # Top left screen corner
@@ -93,9 +85,6 @@ print_line " - Expand save panels by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
-print_line " - Disable \"Are you sure you want to open this application?\" dialog" 
-defaults write com.apple.LaunchServices LSQuarantine -bool false
-
 print_line " - No more resume"
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
@@ -112,18 +101,22 @@ defaults write com.apple.assistant.support "Assistant Enabled" -bool false
 print_line " - Give me the volume feedback back"
 defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool true
 
-print_line " - Make desktop tolerable"
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+print_line " - Make Desktop tolerable"
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-print_line " - Make finder tolerable"
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+print_line " - Make Finder tolerable"
 defaults write com.apple.finder ShowRecentTags -bool false
-defaults write com.apple.finder SidebarMediaBrowserSectionDisclosedState -bool true
-defaults write com.apple.finder SidebarDevicesSectionDisclosedState -bool true
-defaults write com.apple.finder SidebarPlacesSectionDisclosedState -bool true
-defaults write com.apple.finder SidebarSharedSectionDisclosedState -bool true
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder FXPreferredViewStyle -string "icnv" # Icon View
+defaults write com.apple.finder NewWindowTarget -string 'PfCm' # Computer
+/usr/libexec/PlistBuddy -c "Set :StandardViewOptions:ColumnViewOptions:ArrangeBy string dnam" # Name
+
+print_line " - Make Disk Utility tolerable"
+defaults write com.apple.DiskUtility advanced-image-options -bool true
+defaults write com.apple.DiskUtility SidebarShowAllDevices -bool true
 
 print_line " - Shut up Time Machine"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
@@ -133,31 +126,26 @@ defaults write NSGlobalDomain AppleTemperatureUnit -string "Celsius"
 
 print_line " - .DS_Store, go away"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+find / -name '.DS_Store' -delete
 
 print_line " - Hide text input menu"
 defaults write com.apple.TextInputMenu visible -bool false
 
-# dis be broken
-#print_line " - User switcher in menubar"
-#defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.appleuser" -bool true
-#
-#print_line " - Bluetooth in menubar"
-#defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.bluetooth" -bool true
-#
-#print_line " - Volume in menubar"
-#defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.volume" -bool true
+print_line " - User switcher in menubar"
+defaults write com.apple.controlcenter "NSStatusItem Visible UserSwitcher" -bool true
 
-print_line " - Battery percentage in menubar"
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+print_line " - Bluetooth in menubar"
+defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
+
+print_line " - Volume in menubar"
+defaults write com.apple.controlcenter "NSStatusItem Visible Sound" -bool true
 
 print_line " - Make menubar clock informative"
 defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  h:mm:ss a"
 
-# Check if Catalina or above
-if [ ${OSTYPE:6} -ge 19 ]; then
-	print_line " - Don't automatically sync my MP3 player from 2001"
-	defaults write com.apple.AMPDevicesAgent dontAutomaticallySyncIPods -bool true
-fi
+print_line " - Don't automatically sync my MP3 player from 2001"
+defaults write com.apple.AMPDevicesAgent dontAutomaticallySyncIPods -bool true
 
 print_line " - Let's wipe the dock"
 defaults write com.apple.dock persistent-apps -array
