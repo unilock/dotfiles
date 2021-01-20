@@ -16,7 +16,7 @@ print_line "Installing Homebrew packages with --HEAD."
 cat lists/brew-head-packages | xargs brew install --HEAD
 
 print_line "Installing Homebrew cask packages."
-cat lists/brew-cask-packages | xargs brew cask install
+cat lists/brew-cask-packages | xargs brew install --cask
 
 print_line "Installing App Store applications."
 cat lists/mas-app-ids | xargs mas install

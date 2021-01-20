@@ -127,7 +127,7 @@ defaults write NSGlobalDomain AppleTemperatureUnit -string "Celsius"
 print_line " - .DS_Store, go away"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
-find / -name '.DS_Store' -delete
+find / -name '.DS_Store' -delete >/dev/null 2>&1
 
 print_line " - Hide text input menu"
 defaults write com.apple.TextInputMenu visible -bool false
