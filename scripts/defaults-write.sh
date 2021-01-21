@@ -131,14 +131,15 @@ find / -name '.DS_Store' -delete >/dev/null 2>&1
 print_line " - Hide text input menu"
 defaults write com.apple.TextInputMenu visible -bool false
 
-print_line " - User switcher in menubar"
-defaults write com.apple.controlcenter "NSStatusItem Visible UserSwitcher" -bool true
-
-print_line " - Bluetooth in menubar"
-defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
-
-print_line " - Volume in menubar"
-defaults write com.apple.controlcenter "NSStatusItem Visible Sound" -bool true
+# dis still be broken
+#print_line " - User switcher in menubar"
+#defaults write com.apple.controlcenter "NSStatusItem Visible UserSwitcher" -bool true
+#
+#print_line " - Bluetooth in menubar"
+#defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
+#
+#print_line " - Volume in menubar"
+#defaults write com.apple.controlcenter "NSStatusItem Visible Sound" -bool true
 
 print_line " - Make menubar clock informative"
 defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  h:mm:ss a"

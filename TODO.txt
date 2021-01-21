@@ -1,6 +1,7 @@
 TODO:
 
 - fix battery percentage in menubar in Big Sur
+    - also User switcher, Bluetooth, Volume in menubar
 
 - automate Sublime Text preferences (plists)
 
