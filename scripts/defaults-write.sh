@@ -112,7 +112,6 @@ defaults write com.apple.finder ShowRecentTags -bool false
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder FXPreferredViewStyle -string "icnv" # Icon View
 defaults write com.apple.finder NewWindowTarget -string 'PfCm' # Computer
-/usr/libexec/PlistBuddy -c "Set :StandardViewOptions:ColumnViewOptions:ArrangeBy string dnam" # Name
 
 print_line " - Make Disk Utility tolerable"
 defaults write com.apple.DiskUtility advanced-image-options -bool true
