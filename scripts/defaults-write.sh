@@ -102,16 +102,18 @@ print_line " - Give me the volume feedback back"
 defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool true
 
 print_line " - Make Desktop tolerable"
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 print_line " - Make Finder tolerable"
-defaults write com.apple.finder ShowRecentTags -bool false
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-defaults write com.apple.finder FXPreferredViewStyle -string "icnv" # Icon View
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv" # List View
 defaults write com.apple.finder NewWindowTarget -string 'PfCm' # Computer
+defaults write com.apple.finder ShowRecentTags -bool false
 
 print_line " - Make Disk Utility tolerable"
 defaults write com.apple.DiskUtility advanced-image-options -bool true
