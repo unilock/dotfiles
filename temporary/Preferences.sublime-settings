@@ -1,0 +1,15 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	// Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true,
+
+    // Set to false to disable detection of tabs vs. spaces on load
+    "detect_indentation": false,
+
+    // When enabled, pressing tab will insert the best matching completion.
+    // When disabled, tab will only trigger snippets or insert a tab.
+    // Shift+tab can be used to insert an explicit tab when tab_completion is
+    // enabled.
+    "tab_completion": false,
+}
