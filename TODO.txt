@@ -15,6 +15,8 @@ TODO:
         - wget ZIP from somewhere, then extract to ~/Pictures
         - separate GitHub repo?
 
+- disable screensaver; leave power settings as defaults
+
 - get rid of all the cruft (namely stuff leftover from winocm fork)
     - organize, organize, organize... (alphabetize defualts-write?)
 
