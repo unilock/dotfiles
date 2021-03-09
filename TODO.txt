@@ -3,6 +3,9 @@ TODO:
 - fix battery percentage in menubar in Big Sur
     - also User switcher, Bluetooth, Volume in menubar
 
+- check if Xcode CLI is installed in tools/upgrade.sh. if not, install via `xcode-select --install`
+	- Xcode CLI needs to be installed after e very macOS update
+
 - automate Sublime Text preferences (plists)
 
 - automate Ungoogled Chromium preferences (Chrome profiles?)
