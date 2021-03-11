@@ -3,7 +3,7 @@
 if ! xcode-select -p >/dev/null; then
     echo "[INFO] Running 'xcode-select --install'"
     xcode-select --install
-    read -rsp "[WAIT] Press enter to continue..."
+    read -rsp "Press enter to continue..."
 fi
 
 echo "[INFO] Running 'brew update'"
