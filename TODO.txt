@@ -1,5 +1,9 @@
 TODO:
 
+- adjust keyboard brightness in low light: OFF
+- turn keyboard backlight off after ... of inactivity: ON
+- MOTD doesn't work (permission denied)
+
 - fix battery percentage in menubar in Big Sur
     - also User switcher, Bluetooth, Volume in menubar
 
