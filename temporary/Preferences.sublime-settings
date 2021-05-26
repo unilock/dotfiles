@@ -21,4 +21,9 @@
     // Shift+tab can be used to insert an explicit tab when tab_completion is
     // enabled.
     "tab_completion": false,
+
+    // Sets the colors used within the text area.
+    // The value "auto" will switch between the "light_color_scheme" and
+    // "dark_color_scheme" based on the operating system appearance.
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 }
