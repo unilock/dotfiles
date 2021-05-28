@@ -1,9 +1,7 @@
 adoptopenjdk
 android-platform-tools
-element
 eloston-chromium
 flux
-google-chrome
 hex-fiend
 jiggler
 keepassxc
@@ -13,5 +11,8 @@ meld
 nextcloud
 paintbrush
 rectangle
+stats
 sublime-text
+tor-browser
+transmission
 vlc
