@@ -1,5 +1,7 @@
 TODO:
 
+- install Discord Canary (can be done with brew) + BetterDiscord (can't be done with brew) + plugins (PluginRepo, DoNotTrack, ...)
+
 - adjust keyboard brightness in low light: OFF
 - turn keyboard backlight off after ... of inactivity: ON
 - MOTD doesn't work (permission denied)
